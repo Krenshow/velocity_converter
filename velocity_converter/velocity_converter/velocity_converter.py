@@ -39,7 +39,7 @@ class VelocityConverter(Node):
         if speed_right < -100: speed_right = -100
 
         if speed_left > 100: speed_left = 100
-        if speed_left < 100: speed_left = -100
+        if speed_left < -100: speed_left = -100
 
         self.get_logger().info(f"Linear Speed (Right Wheel): {speed_right} %")
         self.get_logger().info(f"Linear Speed (Left Wheel): {speed_left} %")
